@@ -39,7 +39,7 @@ PKG-XXXXXX
 
 The system prevents duplicate tracking IDs from being inserted into the active package collection.
 
-Delivery Status Management
+#Delivery Status Management
 Every package can move through a defined delivery lifecycle:
 Pending
    ↓
@@ -94,7 +94,7 @@ Supported filters include:
 - Delivered
 - Failed
 - Returned
-Package Management
+#Package Management
 The main application menu provides the following operations:
 1. Add new package
 2. Update package status
@@ -115,7 +115,7 @@ The current implementation uses:
 for local demonstration purposes.
 Security note: This key is intentionally part of the current demonstration implementation and should be replaced with a secure authentication mechanism before production use.
 
-Statistics and Reporting
+#Statistics and Reporting
 The system includes a summary module that calculates:
 - Total number of packages
 - Total package weight
@@ -134,7 +134,7 @@ Status breakdown:
   Returned            : 2
 
 Only statuses with existing packages are displayed in the breakdown.
-Technical Architecture
+#Technical Architecture
 The project follows a modular object-oriented architecture consisting of three primary layers:
                     +----------------------+
                     |       UI Layer       |
@@ -160,7 +160,7 @@ The project follows a modular object-oriented architecture consisting of three p
                     +----------------------+
 
 This separation keeps user interaction, business operations, domain data, and persistence responsibilities independent.
-Project Structure
+#Project Structure
 delivery-tracking-system/
 │
 ├── include/
@@ -180,7 +180,7 @@ delivery-tracking-system/
 ├── .gitignore
 └── README.md
 
-Component Responsibilities
+#Component Responsibilities
 Package
 The Package class represents the core shipment entity.
 It stores:
@@ -256,7 +256,7 @@ status
 createdAt
 history
 
-Example structure:
+#Example structure:
 id,sender,receiver,origin,destination,weight,status,createdAt,history
 PKG-123456,John Doe,Jane Doe,Delhi,Mumbai,2.50,In Transit,2026-10-04 10:15:20,...
 
@@ -307,7 +307,7 @@ Choice [0-7]: 10
 Please enter a number between 0 and 7.
 
 This prevents invalid menu input from terminating the application unexpectedly.
-CSV Handling
+#CSV Handling
 The persistence layer includes CSV escaping and parsing logic.
 The implementation handles:
 - Quoted CSV fields
@@ -398,7 +398,7 @@ Package
 DeliveryTracker
 UI
 
-Each component has a clearly defined role.
+#Each component has a clearly defined role.
 Object-Oriented Design
 The system uses classes, encapsulation, constructors, member functions, enumerations, and composition to model the delivery domain.
 Persistent State
@@ -419,7 +419,7 @@ Git	Version control
 GitHub	Source-code hosting
 
 
-Key C++ Concepts Demonstrated
+#Key C++ Concepts Demonstrated
 This project demonstrates practical usage of:
 - Object-oriented programming
 - Classes and objects
@@ -500,34 +500,34 @@ Delivery Management Service
   v
 Database
 
-Web Interface
+#Web Interface
 A browser-based interface could be added for:
 - Customer shipment tracking
 - Administrator dashboards
 - Delivery management
 - Shipment analytics
 - Search and filtering
-Notifications
+#Notifications
 Possible integrations include:
 - Email notifications
 - SMS notifications
 - Delivery alerts
 - Status-change notifications
-Advanced Analytics
+#Advanced Analytics
 Future versions could provide:
 - Delivery-time analysis
 - Failure-rate statistics
 - Return-rate analysis
 - Shipment-volume trends
 - Location-based analytics
-Automated Testing
+#Automated Testing
 The project could be extended with:
 - Unit tests
 - Integration tests
 - Persistence tests
 - Input-validation tests
 - Regression tests
-Security Considerations
+#Security Considerations
 The current application is intended as an educational and project implementation rather than a production logistics platform.
 Before production deployment, the following areas should be strengthened:
 - Replace hard-coded administrative credentials
@@ -540,7 +540,7 @@ Before production deployment, the following areas should be strengthened:
 - Implement secure API authentication
 - Add proper access controls
 - Avoid storing sensitive information in plaintext
-Limitations
+#Limitations
 The current version has several intentional limitations:
 - Local command-line interface
 - CSV-based persistence
@@ -552,7 +552,7 @@ The current version has several intentional limitations:
 - No live GPS tracking
 - No notification service
 These limitations define the current scope and also provide clear directions for future development.
-Project Architecture at a Glance
+#Project Architecture at a Glance
                          DELIVERY TRACKING SYSTEM
                                     |
                  +------------------+------------------+
@@ -572,7 +572,7 @@ Project Architecture at a Glance
                                     v
                               Persistent Data
 
-Repository Structure
+#Repository Structure
 .
 ├── include/
 │   ├── DeliveryTracker.h
@@ -591,7 +591,7 @@ Repository Structure
 ├── .gitignore
 └── README.md
 
-Project Status
+#Project Status
 Component	Status
 Architecture	Complete
 Package Management	Implemented
