@@ -1,0 +1,16 @@
+# Compiled binary
+*.exe
+*.o
+*.obj
+
+# Build directory
+build/
+
+# IDE / editor folders
+.vscode/
+.idea/
+*.user
+
+# Windows artifacts
+Thumbs.db
+desktop.ini

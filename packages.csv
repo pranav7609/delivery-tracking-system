@@ -1,0 +1,3 @@
+id,sender,receiver,origin,destination,weight,status,createdAt,history
+"PKG-753649","Pranav","Dev","BBS","Surada",5,"Out for Delivery","2026-10-04 15:04:15","2026-10-04 15:04:15|Pending|BBS|Package registered.;2026-10-04 15:05:06|Out for Delivery|Gopalpur|Out for Delivery"
+"PKG-605552","John Doe","Jane Smith","New York","Los Angeles",2.5,"Pending","2026-10-04 14:09:31","2026-10-04 14:09:31|Pending|New York|Package registered."
